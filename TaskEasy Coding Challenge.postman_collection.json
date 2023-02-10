@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "de3c0e25-3c06-409f-89da-2fd980063980",
+		"name": "TaskEasy Coding Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8908086"
+	},
+	"item": [
+		{
+			"name": "localhost:5000/getFreeTime",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"hOffice\": \"8AM-5PM\",\r\n    \"hLunch\": \"12PM-1PM\",\r\n    \"tAverage\": 30,\r\n    \"member\": [\r\n        {\r\n            \"name\": \"Kyle\",\r\n            \"time\": [\r\n                \"1:30PM\",\r\n                \"2:30PM\",\r\n                \"6PM\"\r\n            ]\r\n        },\r\n        {\r\n            \"name\": \"Paul\",\r\n            \"time\": [\r\n                \"7AM\",\r\n                \"9AM\",\r\n                \"1:30PM\",\r\n                \"3PM\",\r\n                \"3:30PM\"\r\n            ]\r\n        },\r\n        {\r\n            \"name\": \"Alex\",\r\n            \"time\": [\r\n                \"8AM\",\r\n                \"9:30AM\",\r\n                \"12:30PM\",\r\n                \"3PM\"\r\n            ]\r\n        },\r\n        {\r\n            \"name\": \"Luis\",\r\n            \"time\": [\r\n                \"9AM\",\r\n                \"1:30PM\",\r\n                \"3PM\",\r\n                \"3:30PM\"\r\n            ]\r\n        },\r\n        {\r\n            \"name\": \"Jairo\",\r\n            \"time\": [\r\n                \"8AM\",\r\n                \"9AM\",\r\n                \"6PM\"\r\n            ]\r\n        },\r\n        {\r\n            \"name\": \"Sonya\",\r\n            \"time\": [\r\n                \"8AM\",\r\n                \"12:30PM\",\r\n                \"1:30PM\",\r\n                \"3:30PM\"\r\n            ]\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/getFreeTime",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"getFreeTime"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:5000/getFreeTime",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hOffice\": \"8AM-5PM\",\r\n    \"hLunch\": \"12PM-1PM\",\r\n    \"tAverage\": 30,\r\n    \"member\": [\r\n        {\r\n            \"name\": \"Kyle\",\r\n            \"time\": [\r\n                \"1:30PM\",\r\n                \"2:30PM\",\r\n                \"6PM\"\r\n            ]\r\n        },\r\n        {\r\n            \"name\": \"Paul\",\r\n            \"time\": [\r\n                \"7AM\",\r\n                \"9AM\",\r\n                \"1:30PM\",\r\n                \"3PM\",\r\n                \"3:30PM\"\r\n            ]\r\n        },\r\n        {\r\n            \"name\": \"Alex\",\r\n            \"time\": [\r\n                \"8AM\",\r\n                \"9:30AM\",\r\n                \"12:30PM\",\r\n                \"3PM\"\r\n            ]\r\n        },\r\n        {\r\n            \"name\": \"Luis\",\r\n            \"time\": [\r\n                \"9AM\",\r\n                \"1:30PM\",\r\n                \"3PM\",\r\n                \"3:30PM\"\r\n            ]\r\n        },\r\n        {\r\n            \"name\": \"Jairo\",\r\n            \"time\": [\r\n                \"8AM\",\r\n                \"9AM\",\r\n                \"6PM\"\r\n            ]\r\n        },\r\n        {\r\n            \"name\": \"Sonya\",\r\n            \"time\": [\r\n                \"8AM\",\r\n                \"12:30PM\",\r\n                \"1:30PM\",\r\n                \"3:30PM\"\r\n            ]\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/getFreeTime",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"getFreeTime"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.11.2"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 10 Feb 2023 01:06:40 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1331"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"freeMember\": {\n        \"10:30AM\": [\n            \"Kyle\",\n            \"Paul\",\n            \"Alex\",\n            \"Luis\",\n            \"Jairo\",\n            \"Sonya\"\n        ],\n        \"10AM\": [\n            \"Kyle\",\n            \"Paul\",\n            \"Alex\",\n            \"Luis\",\n            \"Jairo\",\n            \"Sonya\"\n        ],\n        \"11:30AM\": [\n            \"Kyle\",\n            \"Paul\",\n            \"Alex\",\n            \"Luis\",\n            \"Jairo\",\n            \"Sonya\"\n        ],\n        \"11AM\": [\n            \"Kyle\",\n            \"Paul\",\n            \"Alex\",\n            \"Luis\",\n            \"Jairo\",\n            \"Sonya\"\n        ],\n        \"1PM\": [\n            \"Kyle\",\n            \"Paul\",\n            \"Alex\",\n            \"Luis\",\n            \"Jairo\",\n            \"Sonya\"\n        ],\n        \"2PM\": [\n            \"Kyle\",\n            \"Paul\",\n            \"Alex\",\n            \"Luis\",\n            \"Jairo\",\n            \"Sonya\"\n        ],\n        \"3:30PM\": [\n            \"Kyle\",\n            \"Alex\",\n            \"Jairo\"\n        ],\n        \"3PM\": [\n            \"Kyle\",\n            \"Jairo\",\n            \"Sonya\"\n        ],\n        \"4:30PM\": [\n            \"Kyle\",\n            \"Paul\",\n            \"Alex\",\n            \"Luis\",\n            \"Jairo\",\n            \"Sonya\"\n        ],\n        \"4PM\": [\n            \"Kyle\",\n            \"Paul\",\n            \"Alex\",\n            \"Luis\",\n            \"Jairo\",\n            \"Sonya\"\n        ],\n        \"8:30AM\": [\n            \"Kyle\",\n            \"Paul\",\n            \"Alex\",\n            \"Luis\",\n            \"Jairo\",\n            \"Sonya\"\n        ],\n        \"8AM\": [\n            \"Kyle\",\n            \"Paul\",\n            \"Luis\"\n        ],\n        \"9:30AM\": [\n            \"Kyle\",\n            \"Paul\",\n            \"Luis\",\n            \"Jairo\",\n            \"Sonya\"\n        ],\n        \"9AM\": [\n            \"Kyle\",\n            \"Alex\",\n            \"Sonya\"\n        ]\n    }\n}"
+				}
+			]
+		}
+	]
+}
